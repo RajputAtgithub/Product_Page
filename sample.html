@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="sample.css">
     <script src="https://kit.fontawesome.com/e02a085fcb.js" crossorigin="anonymous"></script>
+    <script>console.log("I am started...");</script>
     
 </head>
 <body>
@@ -20,317 +21,276 @@
       <input type="search" placeholder="Search for products"/><i class="fa-solid fa-magnifying-glass"></i>
       <div class="product-list-page">
       
-        <div class="cb-container">
+        <div class="filter">
           <h3>Colour</h3>
-          <lable class="checkbox colour-r">
-            <input type=checkbox rel=Red>Red
+          <div class="colours">
+          <lable >
+            <input type="checkbox" rel="Red" class="colour" onchange="change();">Red
           </lable><br>
-          <lable class="checkbox colour-b">
-            <input type=checkbox rel=Blue>Blue
+          <lable >
+            <input type="checkbox" rel="Blue" class="colour" onchange="change();">Blue
           </lable><br>
+          <lable >
+            <input type="checkbox" rel="Pink" class="colour" onchange="change();">Pink
+          </lable><br>
+          <lable >
+            <input type="checkbox" rel="White" class="colour"onchange="change();">White
+          </lable><br>
+          <lable >
+            <input type="checkbox" rel="Black" class="colour"onchange="change();">Black
+          </lable><br>
+          <lable >
+            <input type="checkbox" rel="Yellow" class="colour"onchange="change();">Yellow
+          </lable><br>
+          <lable >
+            <input type="checkbox" rel="Grey" class="colour"onchange="change();">Grey
+          </lable><br>
+          <lable >
+            <input type="checkbox" rel="Purple" class="colour" onchange="change();">Purple
+          </lable></div>
           <h3>Gender</h3>
-          <lable class="checkbox gender-m">
-            <input type=checkbox rel=Men>Men
+          <div class="genders">
+          <lable >
+            <input type="checkbox" rel="Men" class="gender" onchange="change();">Men
           </lable><br>
-          <lable class="checkbox gender-w">
-            <input type=checkbox rel=Women>Women
-          </lable>
+          <lable >
+            <input type="checkbox" rel="Women" onchange="change();">Women
+          </lable></div>
           <h3>Price</h3>
-          <lable class="checkbox price-250">
-            <input type=checkbox rel=0-Rs250>0-Rs250
+          <lable >
+            <input type="checkbox" rel="0-Rs250" class="price" onchange="change();">0-Rs250
           </lable><br>
-          <lable class="checkbox price-450">
-            <input type=checkbox rel=Rs250-450>Rs250-450
+          <lable >
+            <input type="checkbox" rel="Rs250-450" class="price" onchange="change();">Rs250-450
           </lable><br>
-          <lable class="checkbox price-451">
-            <input type=checkbox rel=Rs451>Rs451
+          <lable >
+            <input type="checkbox" rel="Rs451" class="price" onchange="change();">Rs451
           </lable>
       
           <h3>Type</h3>
           <lable>
-            <input type=checkbox rel=Polo>Polo
+            <input type="checkbox" rel="Polo" class="type" onchange="change();">Polo
           </lable><br>
           <lable>
-            <input type=checkbox rel=Hoogle>Hoodle
+            <input type="checkbox" rel="Hoodle" class="type" onchange="change();">Hoodle
           </lable><br>
           <lable>
-            <input type=checkbox rel=Basic>Basic
+            <input type="checkbox" rel="Basic" class="type" onchange="change();">Basic
           </lable>
         </div>
-        <div class="products" >
-          <div class="product" id="1">
-            <h3>Black polo</h3>
-            <div class="image1">
-              <img />
-            </div>
-            <div>Rs 250 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          
-          <div class="product" id="2">
-            <h3>Blue polo</h3>
-            <div class="image2">
-              <img />
-            </div>
-            <div>Rs 350 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="3">
-            <h3>Pink polo</h3>
-            <div class="image3">
-              <img />
-            </div>
-            <div>Rs 350 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="4">
-            <h3>Black Hoodie</h3>
-            <div class="image4">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="5">
-            <h3>Green polo</h3>
-            <div class="image5">
-              <img />
-            </div>
-            <div>Rs 250 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="6">
-            <h3>Green polo</h3>
-            <div class="image6">
-              <img />
-            </div>
-            <div>Rs 350 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="7" display="none">
-            <h3>Black Hoodie</h3>
-            <div class="image7">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="8" display="none">
-            <h3>Black Hoodie</h3>
-            <div class="image8">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="9" display="none">
-            <h3>Blue Round</h3>
-            <div class="image9">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="10" display="none">
-            <h3>Red Round</h3>
-            <div class="image10">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="11" display="none">
-            <h3>Grey Round</h3>
-            <div class="image11">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="12" display="none">
-            <h3>Purple Hoodie</h3>
-            <div class="image12">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="13" display="none">
-            <h3>Grey Round</h3>
-            <div class="image13">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="14" display="none">
-            <h3>White Round</h3>
-            <div class="image14">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="15" display="none">
-            <h3>Black Round</h3>
-            <div class="image15">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="16" display="none">
-            <h3>Purle Round</h3>
-            <div class="image16">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="17" display="none">
-            <h3>White Round</h3>
-            <div class="image17">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="18" display="none">
-            <h3>Blue Round</h3>
-            <div class="image18">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="19" display="none">
-            <h3>Yello Hoodie</h3>
-            <div class="image19">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="20" display="none">
-            <h3>White Polo</h3>
-            <div class="image20">
-              <img />
-            </div>
-            <div>Rs 350 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="21" display="none">
-            <h3>Red Polo</h3>
-            <div class="image21">
-              <img />
-            </div>
-            <div>Rs 250 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="22" display="none">
-            <h3>Black Hoodie</h3>
-            <div class="image22">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="23" display="none">
-            <h3>Grey Hoodie</h3>
-            <div class="image23">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="24" display="none">
-            <h3>Grey Polo</h3>
-            <div class="image24">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="25" display="none">
-            <h3>Red Hoodie</h3>
-            <div class="image25">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="26" display="none">
-            <h3>White Polo</h3>
-            <div class="image26">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="27" display="none">
-            <h3>White Hoodie</h3>
-            <div class="image27">
-              <img />
-            </div>
-            <div>Rs 500 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="28" display="none">
-            <h3>Grey Round</h3>
-            <div class="image28">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="29" display="none">
-            <h3>Black Round</h3>
-            <div class="image29">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="product" id="30" display="none">
+        <div class="result" >
+          <div class="product Black Men 0-Rs250 Polo 3" id="1">
             <h3>Black Polo</h3>
-            <div class="image30">
-              <img />
-            </div>
-            <div>Rs 300 &nbsp;&nbsp;&nbsp;
+            <img class="image1"/>
+            <p>Rs 250 &nbsp;&nbsp;
               <button>Add to Cart</button>
-            </div>
+            </p>
           </div>
-        </div> <!--all product container-->
+          <div class="product Blue Women 0-Rs250 Polo 3" id="2">
+            <h3>Blue Polo</h3>
+            <img class="image2"/>
+            <p>Rs 350 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Pink Women 0-Rs250 Polo 6" id="3">
+            <h3>Pink Polo</h3>
+            <img class="image3"/>
+            <p>Rs 350 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Black Men Rs451 Hoodie 2" id="4">
+            <h3>Black Hoodie</h3>
+            <img class="image4"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Green Women 0-Rs250 Polo 1" id="5">
+            <h3>Green Polo</h3>
+            <img class="image5"/>
+            <p>Rs 250 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Green Women Rs250-450 Polo 1" id="6">
+            <h3>Green Polo</h3>
+            <img class="image6"/>
+            <p>Rs 350 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Black Women Rs451 Hoodie 2" id="7">
+            <h3>Blue Hoodie</h3>
+            <img class="image7"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Black Women Rs451 Hoodie 5" id="8">
+            <h3>Black Hoodie</h3>
+            <img class="image8"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Blue Men Rs250-450 Basic 2" id="9">
+            <h3>Blue Round</h3>
+            <img class="image9"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Red Women Rs250-450 Basic 2" id="10" >
+            <h3>Red Round</h3>
+            <img class="image10"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Grey Men Rs250-450 Basic 1" id="11" >
+            <h3>Grey Round</h3>
+            <img class="image11"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Purple Women Rs451 Hoodie 3" id="12" >
+            <h3>Purple Hoodie</h3>
+            <img class="image12"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Grey Women Rs250-450 Basic 1" id="13">
+            <h3>Grey Round</h3>
+            <img class="image13"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product White Women Rs250-450 Basic 0" id="14">
+            <h3>White Round</h3>
+            <img class="image14"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Black Men Rs250-450 Basic 7" id="15">
+            <h3>Black Round</h3>
+            <img class="image15"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Purple Men Rs250-450 Basic 1" id="16">
+            <h3>Purle Round</h3>
+            <img class="image16"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product White Men Rs250-450 Basic 2" id="17">
+            <h3>White Round</h3>
+            <img class="image17"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Blue Women Rs250-450 Basic 3" id="18">
+            <h3>Blue Round</h3>
+            <img class="image18"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Yellow Women Rs451 Hoodie 1" id="19">
+            <h3>Yellow Hoodie</h3>
+            <img class="image19"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product White Women Rs250-450 Polo 4" id="20">
+            <h3>White Polo</h3>
+            <img class="image20"/>
+            <p>Rs 350 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Red Men 0-Rs250 Polo 2" id="21" >
+            <h3>Red Polo</h3>
+            <img class="image21"/>
+            <p>Rs 250 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Blue Men Rs451 Hoodie 0" id="22" >
+            <h3>Blue Hoodie</h3>
+            <img class="image22"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Grey Men Rs451 Hoodie 2" id="23">
+            <h3>Grey Hoodie</h3>
+            <img class="image23"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Grey Men Rs250-450 Polo 3" id="24">
+            <h3>Grey Polo</h3>
+            <img class="image24"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Red Men Rs250-450 Hoodie 0" id="25">
+            <h3>Red Hoodie</h3>
+            <img class="image25"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product White Men Rs250-450 Polo 1" id="26">
+            <h3>White Polo</h3>
+            <img class="image26"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product White Women Rs451 Hoodie 3" id="27">
+            <h3>White Hoodie</h3>
+              <img class="image27"/>
+            <p>Rs 500 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Grey Men Rs250-450 Basic 0" id="28">
+            <h3>Grey Round</h3>
+              <img class="image28"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Black Women Rs250-450 Basic 0" id="29">
+            <h3>Black Round</h3>
+              <img class="image29"/>
+            <p>Rs 300 &nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          <div class="product Black Women Rs250-450 Polo 4" id="30">
+            <h3>Black Polo</h3>
+              <img class="image30"/>
+            <p class="f">Rs 300&nbsp;&nbsp;&nbsp;
+              <button>Add to Cart</button>
+            </p>
+          </div>
+        </div> <!--all result product container-->
       </div>    <!--product list page-->
-      <script src="sample.js"></script>
+      <script type="module" src="sample.js"></script>
 </body>
 </html>

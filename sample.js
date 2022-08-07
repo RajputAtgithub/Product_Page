@@ -361,18 +361,22 @@ var data = [
     }
   ];
   
-  let lable = document.getElementsByTagName("lable");
-  var checkBoxes = document.querySelectorAll("input[type='checkbox']");
+  
+
   // console.log(lable);
   // console.log(lable.length);
+
   
-  for (var i = 0; i < lable.length; i++) {
+  /* for (var i = 0; i < lable.length; i++) {
     // console.log(lable[i].innerText);
-  }
+  } */
   
-  function checked() {
-    for (let i = 0; i < checkBoxes.length; i++) {
-      var cB = checkBoxes[i];
+  function change() {
+    const colourCbs=document.querySelectorAll(".filter.colours input[type='checkbox']");
+    var genderCbs = document.querySelectorAll(".filter.genders input[type='checkbox']");
+    console.log(colourCbs);
+    for (let i = 0; i < colourCbs.length; i++) {
+      var cB = colourCbs[i];
       var att = cB.getAttribute("rel");
   //     if (checkBoxes.checked=true && cB){
         
@@ -381,5 +385,5 @@ var data = [
   
     
   }
-  checked();
+  change();
   
